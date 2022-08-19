@@ -10,6 +10,7 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
+const { src, dest } = require('gulp');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/app.scss')
@@ -86,8 +87,7 @@ gulp.task('copy', async function () {
 
 gulp.task('clear', function (callback) {
   return cache.clearAll();
-})
-
+});
 gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
   gulp.watch('app/*.html', gulp.parallel('code'));
