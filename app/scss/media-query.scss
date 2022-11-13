@@ -8,7 +8,9 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+    .dark-bg {
+        background-color: antiquewhite;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
