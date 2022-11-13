@@ -10,6 +10,7 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
+const { src, dest } = require('gulp');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/app.scss')
