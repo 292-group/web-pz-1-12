@@ -1,0 +1,26 @@
+html{
+    width: 99%;
+    margin: auto;
+    }
+.header-icons{
+    color: aliceblue;
+    font-size: 25px;
+    margin-right: 1rem;
+}
+header{
+    a{
+        background-color: black;
+    }
+}
+.nav-item{
+    margin-left: 80px;
+}
+.header-avatar{
+    width: 40px;
+}
+.dropdown{
+    button{
+    color: $text-color;
+    font-weight: $font-700;
+    }
+}
